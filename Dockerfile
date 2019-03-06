@@ -1,6 +1,6 @@
 FROM node:6.12.0-alpine
 COPY ./ bluechatter
-WORKDIR bluechatter
+WORKDIR ./bluechatter
 RUN npm install -d --production
 EXPOSE 80
 ENV PORT 80
