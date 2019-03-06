@@ -1,4 +1,4 @@
-FROM ibmcom/ibmnode:latest
+FROM node:6.12.0-alpine
 COPY ./ bluechatter
 WORKDIR bluechatter
 RUN npm install -d --production
