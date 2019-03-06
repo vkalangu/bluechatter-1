@@ -13,11 +13,11 @@ template:
     - repo
   info:
     git url: >-
-      [https://github.com/open-toolchain/secure-kube-toolchain](https://github.com/open-toolchain/secure-kube-toolchain)
+      [https://github.com/logeswtr/bluechatter](https://github.com/logeswtr/bluechatter)
     git branch: >-
-      [master](https://github.com/open-toolchain/secure-kube-toolchain/tree/master)
+      [master](https://github.com/logeswtr/bluechatter/tree/master)
 toolchain:
-  name: 'kube-toolchain-{{timestamp}}'
+  name: 'microservice-chatter-{{timestamp}}'
   template:
     getting_started:
       $ref: "#/messages/template.gettingStarted" 
@@ -25,8 +25,8 @@ services:
   repo:
     service_id: hostedgit
     parameters:
-      repo_name: 'hello-containers-{{timestamp}}'
-      repo_url: 'https://github.com/open-toolchain/hello-containers'
+      repo_name: 'microservice-chatter-{{timestamp}}'
+      repo_url: 'https://github.com/logeswtr/bluechatter'
       type: clone
       has_issues: true
       enable_traceability: true
