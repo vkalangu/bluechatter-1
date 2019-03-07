@@ -393,6 +393,19 @@ In the next step, you will configure **kubectl** to point to your newly created 
 
 For more details, visit [IBM Bluemix Container Service](https://www.ibm.com/cloud-computing/bluemix/containers)
 
+3_0 Continuously deliver Docker app to a Kubernetes Cluster 
+-----------------------------------------------------------
+This BlueChatter application uses Docker with Node.js and includes a DevOps toolchain that is preconfigured for continuous delivery with Vulnerability Advisor, source control, issue tracking, and online editing, and deployment to the IBM Cloud Containers service.
+
+Application code is stored in source control, along with its Dockerfile and its Kubernetes deployment script.
+The target cluster is configured during toolchain setup (using a IBM Cloud API key and cluster name). You can later change these by altering the Delivery Pipeline configuration.
+Any code change to the Git repo will automatically be built, validated and deployed into the Kubernetes cluster.
+
+![Icon](./.bluemix/toolchain.png)
+
+### To get started, click this button:
+[![Create toolchain](https://cloud.ibm.com/devops/graphics/create_toolchain_button.png)](https://cloud.ibm.com/devops/setup/deploy?repository=https%3A%2F%2Fgithub.com%2Flogeswtr%2Fbluechatter&env_id=ibm:yp:us-south)
+---
 
 **Done!**    
 
