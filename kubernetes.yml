@@ -67,4 +67,4 @@ spec:
     port: 80
     nodePort: 30089
   selector:
-    bluechatter: chatter-service
+    bluechatter: web
