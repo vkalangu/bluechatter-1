@@ -20,7 +20,7 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    bluechatter: redis
+    app: redis
   name: redis
 spec:
   clusterIP: None
@@ -42,7 +42,7 @@ spec:
   template:
     metadata:
       labels:
-        name: web
+        app: web
     spec:
       containers:
       - name: web
@@ -67,4 +67,4 @@ spec:
     port: 80
     nodePort: 30089
   selector:
-    name: web
+    app: web
