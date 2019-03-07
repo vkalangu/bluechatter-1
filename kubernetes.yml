@@ -59,7 +59,7 @@ kind: Service
 metadata:
   labels:
     bluechatter: chatter-service
-  name: web
+  name: chatter-service
 spec:
   type: NodePort
   ports:
