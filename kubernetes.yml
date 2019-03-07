@@ -7,7 +7,7 @@ spec:
   template:
     metadata:
       labels:
-        bluechatter: redis
+        app: redis
     spec:
       containers:
       - image: redis
@@ -29,7 +29,7 @@ spec:
     port: 55555
     targetPort: 0
   selector:
-    bluechatter: redis
+    app: redis
 ---
 
 
@@ -58,7 +58,7 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    bluechatter: chatter-service
+    app: chatter-service
   name: chatter-service
 spec:
   type: NodePort
