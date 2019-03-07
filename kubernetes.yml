@@ -42,7 +42,7 @@ spec:
   template:
     metadata:
       labels:
-        bluechatter: web
+        name: web
     spec:
       containers:
       - name: web
@@ -67,4 +67,4 @@ spec:
     port: 80
     nodePort: 30089
   selector:
-    bluechatter: web
+    name: web
