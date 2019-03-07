@@ -30,6 +30,7 @@ Table of contents
     * [2.7 Manual Scaling](#2_7-manual-scaling)
     * [2.8 Automatic Scaling](#2_8-automatic-scaling) 
     * [2.9 Why use the Kubernetes service on Bluemix?](#2_9-Why-use-the-Kubernetes-service-on-Bluemix?)
+  * [3.0 Continuously deliver Docker app to a Kubernetes Cluster]
   * [Useful Kubernetes commands](#useful-kubernetes-commands)
   * [License](#license)
   * [Dependencies](#dependencies)
