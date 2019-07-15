@@ -416,6 +416,9 @@ stages:
       # ------------------
       # source: https://raw.githubusercontent.com/open-toolchain/commons/master/scripts/deploy_kubectl.sh
       # Input env variables (can be received via a pipeline environment properties.file.
+      curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.14.0/bin/linux/amd64/kubectl
+      chmod +x ./kubectl
+      mv ./kubectl /usr/local/bin
       echo "IMAGE_NAME=${IMAGE_NAME}"
       echo "IMAGE_TAG=${IMAGE_TAG}"
       echo "REGISTRY_URL=${REGISTRY_URL}"
