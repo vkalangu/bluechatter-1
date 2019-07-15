@@ -418,7 +418,7 @@ stages:
       # Input env variables (can be received via a pipeline environment properties.file.
       curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.14.0/bin/linux/amd64/kubectl
       chmod +x ./kubectl
-      mv ./kubectl /usr/local/bin
+
       echo "IMAGE_NAME=${IMAGE_NAME}"
       echo "IMAGE_TAG=${IMAGE_TAG}"
       echo "REGISTRY_URL=${REGISTRY_URL}"
@@ -448,7 +448,7 @@ stages:
           exit 1
       fi    
       set -x
-      kubectl apply --namespace ${CLUSTER_NAMESPACE} -f ${DEPLOYMENT_FILE} 
+      ./kubectl apply --namespace ${CLUSTER_NAMESPACE} -f ${DEPLOYMENT_FILE} 
       set +x
 
       echo ""
